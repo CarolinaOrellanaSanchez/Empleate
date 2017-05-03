@@ -1,5 +1,4 @@
 export class Oferta {
-    constructor(public nombre: string, public descripcion: string, public imagenUrl: string, public ingredientes: Array<string>) {
-
+    constructor(public imagenUrl: string, public nombreEmpresa: string, public puesto: string, public fecha: number,  public lugar: string, public descripcion: string, public skills: Array<string>, public salario: any, public horario: string,) {
     }
 }
