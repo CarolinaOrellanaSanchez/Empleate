@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.component';
 import { ListaOfertasComponent } from './lista-ofertas/lista-ofertas.component';
+import { OfertaComponent } from './lista-ofertas/oferta/oferta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BarraNavegacionComponent,
-    ListaOfertasComponent
+    ListaOfertasComponent,
+    OfertaComponent
   ],
   imports: [
     BrowserModule,
