@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
+import { routing } from  './app.routing';
 import { AppComponent } from './app.component';
 import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.component';
 import { ListaOfertasComponent } from './lista-ofertas/lista-ofertas.component';
@@ -22,7 +22,8 @@ import { OfertaDetalladaComponent } from './oferta-detallada/oferta-detallada.co
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
