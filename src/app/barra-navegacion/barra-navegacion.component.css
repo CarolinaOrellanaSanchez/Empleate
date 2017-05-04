@@ -7,6 +7,10 @@
     margin-right: 0px;
     padding-right: 0px;
 }
+.navbar {
+    margin-bottom: 0px;
+}
+ 
 /*Estilo Nuestro logo*/
 .logo_empleate{
     width: 20%;
