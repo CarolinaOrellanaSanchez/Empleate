@@ -1,0 +1,13 @@
+.logo_empleate{
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+.navbar-header {
+    float: right;
+    clear: both;
+}
+#bs-example-navbar-collapse-1{
+    float: right;
+}
