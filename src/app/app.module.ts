@@ -8,6 +8,7 @@ import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.co
 import { ListaOfertasComponent } from './lista-ofertas/lista-ofertas.component';
 import { OfertaComponent } from './lista-ofertas/oferta/oferta.component';
 import { OfertaDetalladaComponent } from './oferta-detallada/oferta-detallada.component';
+import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { OfertaDetalladaComponent } from './oferta-detallada/oferta-detallada.co
     BarraNavegacionComponent,
     ListaOfertasComponent,
     OfertaComponent,
-    OfertaDetalladaComponent
+    OfertaDetalladaComponent,
+    QuienesSomosComponent
     
   ],
   imports: [
