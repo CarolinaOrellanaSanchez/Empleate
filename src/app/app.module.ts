@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.component';
 import { ListaOfertasComponent } from './lista-ofertas/lista-ofertas.component';
 import { OfertaComponent } from './lista-ofertas/oferta/oferta.component';
+import { OfertaDetalladaComponent } from './oferta-detallada/oferta-detallada.component';
+import { OfertaCompletaComponent } from './oferta-detallada/oferta-completa/oferta-completa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BarraNavegacionComponent,
     ListaOfertasComponent,
-    OfertaComponent
+    OfertaComponent,
+    OfertaDetalladaComponent,
+    OfertaCompletaComponent
   ],
   imports: [
     BrowserModule,
