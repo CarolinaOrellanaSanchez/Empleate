@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { OfertaDetalladaComponent } from '../oferta-detallada/oferta-detallada.component';
+import { OfertasComponent } from '../ofertas/ofertas.component';
 
 export const LISTAOFERTAS_ROUTES: Routes = [
-    { path: 'ver-detalle', component: OfertaDetalladaComponent }
+    { path: 'ver-detalle', component: OfertasComponent }
 ];
