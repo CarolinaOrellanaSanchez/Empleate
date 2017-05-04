@@ -12,6 +12,7 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { OfertasComponent } from './ofertas/ofertas.component';
 import { FormacionComponent } from './formacion/formacion.component';
 import { HomeComponent } from './home/home.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HomeComponent } from './home/home.component';
     QuienesSomosComponent,
     OfertasComponent,
     FormacionComponent,
-    HomeComponent
+    HomeComponent,
+    FormularioComponent
     
   ],
   imports: [
