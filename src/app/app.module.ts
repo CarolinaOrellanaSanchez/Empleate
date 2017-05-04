@@ -9,6 +9,7 @@ import { ListaOfertasComponent } from './lista-ofertas/lista-ofertas.component';
 import { OfertaComponent } from './lista-ofertas/oferta/oferta.component';
 import { OfertaDetalladaComponent } from './oferta-detallada/oferta-detallada.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
+import { OfertasComponent } from './ofertas/ofertas.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
     ListaOfertasComponent,
     OfertaComponent,
     OfertaDetalladaComponent,
-    QuienesSomosComponent
+    QuienesSomosComponent,
+    OfertasComponent
     
   ],
   imports: [
