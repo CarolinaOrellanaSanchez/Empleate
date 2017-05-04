@@ -1,14 +1,74 @@
+/*Estilo caja navegacion*/
+.navbar-default {
+    background-color: #fff;
+    border: none;
+}
+.row{
+    margin-right: 0px;
+    padding-right: 0px;
+}
+/*Estilo Nuestro logo*/
 .logo_empleate{
     width: 20%;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 20px;
     float: left;
 }
+/*Estilo boton Ofertas trabajo*/
 .navbar-header {
-    float: right;
     clear: both;
+    border: 1px solid #3296b7;
+    margin-top: 10px;
+    width: 21%;
+    background-color: #3296b7;
 }
+.navbar-header:hover {
+    clear: both;
+    border: 1px solid #3296b7;
+    margin-top: 10px;
+    width: 21%;
+    background-color: #fff;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+    width: 113%;
+    font-size: 20px;
+}
+.navbar-default .navbar-brand:hover {
+    color: #3296b7;
+    width: 113%;
+    font-size: 22px;
+}
+/*Estilos botones navegacion*/   
 #bs-example-navbar-collapse-1{
     float: right;
+    width: 79%;
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-
+.nav > li{
+    width: 20%;
+    border: 1px solid #3296b7;
+    background-color: #a3ccda;
+}
+.nav > li:hover{
+    width: 20%;
+    border: 1px solid #3296b7;
+    background-color: #fff;
+}
+.input-group {
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    border: 1px solid #3296b7;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 17px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #3296b7;
+    font-size: 19px;
+}
