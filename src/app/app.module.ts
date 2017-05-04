@@ -8,7 +8,7 @@ import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.co
 import { ListaOfertasComponent } from './lista-ofertas/lista-ofertas.component';
 import { OfertaComponent } from './lista-ofertas/oferta/oferta.component';
 import { OfertaDetalladaComponent } from './oferta-detallada/oferta-detallada.component';
-import { OfertaCompletaComponent } from './oferta-detallada/oferta-completa/oferta-completa.component';
+
 
 @NgModule({
   declarations: [
@@ -16,8 +16,8 @@ import { OfertaCompletaComponent } from './oferta-detallada/oferta-completa/ofer
     BarraNavegacionComponent,
     ListaOfertasComponent,
     OfertaComponent,
-    OfertaDetalladaComponent,
-    OfertaCompletaComponent
+    OfertaDetalladaComponent
+    
   ],
   imports: [
     BrowserModule,
