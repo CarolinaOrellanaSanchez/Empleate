@@ -1,10 +1,5 @@
-import {
-  Component,
-  OnInit
-} from '@angular/core';
-import {
-  Oferta
-} from "../oferta";
+import { Component, OnInit } from '@angular/core';
+import { Oferta } from "../oferta";
 import { Router } from '@angular/router';
 
 @Component({

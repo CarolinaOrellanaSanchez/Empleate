@@ -10,6 +10,8 @@ import { OfertaComponent } from './lista-ofertas/oferta/oferta.component';
 import { OfertaDetalladaComponent } from './oferta-detallada/oferta-detallada.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { OfertasComponent } from './ofertas/ofertas.component';
+import { FormacionComponent } from './formacion/formacion.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { OfertasComponent } from './ofertas/ofertas.component';
     OfertaComponent,
     OfertaDetalladaComponent,
     QuienesSomosComponent,
-    OfertasComponent
+    OfertasComponent,
+    FormacionComponent,
+    HomeComponent
     
   ],
   imports: [
