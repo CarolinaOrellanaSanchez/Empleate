@@ -1,3 +1,6 @@
+.general_cont{
+    background-image: url(../../assets/imagen_home.png);
+}
 .contenedor {
     width: 40%;
     padding-top: 20px;
@@ -25,3 +28,29 @@
     width: 40%;
     border-radius: 0px;
 }
+.cajita{
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 24px;
+}
+.content_general{
+    border: 1px solid #3296b7;
+    width: 603px;
+    background-color: #fff;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #3296b7;
+    border-color: #3296b7;
+    margin: 0px 40px 20px;
+    width: 20%;
+    border-radius: 0px;
+}
+.btn-primary:hover{
+    color: #3296b7;
+    background-color: #ffffff;
+    border-color: #3296b7;
+    margin: 0px 40px 20px;
+    width: 20%;
+    border-radius: 0px;
+} 
