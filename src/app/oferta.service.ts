@@ -9,8 +9,12 @@ export class OfertaService {
   ];
   constructor() { }
  
-  devolverOferta(): Array<Oferta> {
+  devolverOfertas(): Array<Oferta> {
     return this.listaOfertas;
+  }
+
+  devolverOferta(id: any){
+    return this.listaOfertas[id];
   }
 
 }
