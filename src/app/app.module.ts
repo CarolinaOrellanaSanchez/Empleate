@@ -14,6 +14,7 @@ import { FormacionComponent } from './formacion/formacion.component';
 import { HomeComponent } from './home/home.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { FooterComponent } from './footer.component';
+import { OfertaService } from './oferta.service';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { FooterComponent } from './footer.component';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [OfertaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

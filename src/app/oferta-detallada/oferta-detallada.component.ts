@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs/Rx';
+import { Oferta } from '../oferta';
 
 @Component({
   selector: 'app-oferta-detallada',
@@ -6,8 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./oferta-detallada.component.css']
 })
 export class OfertaDetalladaComponent implements OnInit {
-
-  constructor() { }
+  subscripcion: Subscription;
+  id: string;
+  oferta: Oferta;
+  constructor(private activatedRoute: ActivatedRoute) { 
+    this.subscripcion = this.activatedRoute.params.subscribe(
+      params => this.id = params['id']
+    );
+  }
 
   ngOnInit() {
   }

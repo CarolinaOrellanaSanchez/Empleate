@@ -32,3 +32,8 @@
 .list-group-item.active .list-group-item-text{
     color: #333;
 }
+.list-group {
+    padding-left: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
