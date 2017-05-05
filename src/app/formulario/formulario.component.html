@@ -1,4 +1,7 @@
-<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+<button type="button" class="btn btn-info" >Usuario</button>
+<button type="button" class="btn btn-info" >Empresa</button>
+<hr>
+<form (ngSubmit)="onSubmit(f)" #f="ngForm" id="formulario1" *ngIf="usuario==true">
 <div>
   <h3>Datos personales</h3>
 <div class="form-group">
@@ -17,7 +20,35 @@
 </div>
 <div class="form-group">
 <label for="password">Password</label>
-<input type="password" class="form-control" id="password" name="password">
+<input type="password" class="form-control" id="password" name="password" pattern
+="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-
+9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required>
+</div>
+<button type="submit" class="btn btn-primary" >Enviar</button>
+
+</form>
+<form (ngSubmit)="onSubmit(f)" #f="ngForm" id="formulario2" *ngIf="usuario==false">
+<div>
+  <h3>Datos personales</h3>
+<div class="form-group">
+<label for="nombre">Nombre</label>
+<input type="text" class="form-control" id="nombre" name="nombre">
+</div>
+<div class="form-group">
+<label for="nombre">Apellidos</label>
+<input type="text" class="form-control" id="apellido" name="apellido">
+</div>
+<h3>Datos de la cuenta</h3>
+<div class="form-group">
+<label for="email">E-Mail</label>
+<input type="text" class="form-control" id="email" name="email">
+</div>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input type="password" class="form-control" id="password" name="password" pattern
+="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-
+9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required>
 </div>
 <button type="submit" class="btn btn-primary" >Enviar</button>
 </form>

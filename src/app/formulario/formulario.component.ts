@@ -7,6 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent implements OnInit {
+  usuario = true;
   onSubmit(form: NgForm) {
     
   }
