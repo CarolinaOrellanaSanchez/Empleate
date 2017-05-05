@@ -13,10 +13,9 @@
 .footer{
     width: 100%;
     height: 40px;
-    margin: 0px;
-    padding: 0px;
     background-color: #3296b7;
     position: fixed;
+    bottom: 0px;
 }
 .txt_footer{
     color:#fff;
