@@ -13,6 +13,7 @@ import { OfertasComponent } from './ofertas/ofertas.component';
 import { FormacionComponent } from './formacion/formacion.component';
 import { HomeComponent } from './home/home.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { FooterComponent } from './footer.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     OfertasComponent,
     FormacionComponent,
     HomeComponent,
-    FormularioComponent
+    FormularioComponent,
+    FooterComponent
     
   ],
   imports: [
