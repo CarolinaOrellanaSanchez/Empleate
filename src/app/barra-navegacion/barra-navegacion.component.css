@@ -21,14 +21,14 @@
 /*Estilo boton Ofertas trabajo*/
 .navbar-header {
     clear: both;
-    border: 1px solid #3296b7;
+    border: 1px solid #000;
     margin-top: 10px;
     width: 21%;
     background-color: #3296b7;
 }
 .navbar-header:hover {
     clear: both;
-    border: 1px solid #3296b7;
+    border: 1px solid #000;
     margin-top: 10px;
     width: 21%;
     background-color: #fff;
