@@ -4,16 +4,19 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { LISTAOFERTAS_ROUTES } from './lista-ofertas/lista-ofertas.routing';
 import { HomeComponent } from './home/home.component';
 import { FormacionComponent } from './formacion/formacion.component';
-import { FormularioComponent } from './formulario/formulario.component'
+import { FormularioComponent } from './formulario/formulario.component';
+import { OfertaDetalladaComponent } from './oferta-detallada/oferta-detallada.component'
 
 const APP_ROUTES: Routes = [
-    { path: '', redirectTo: 'app-home', pathMatch:'full' },
-    { path: 'app-formulario', component: FormularioComponent},
-    { path: 'app-formacion', component: FormacionComponent },
-    { path: 'app-lista-ofertas', component: ListaOfertasComponent },
-    { path: 'app-home', component: HomeComponent },
+    { path: '', redirectTo: 'home', pathMatch:'full' },
+    { path: 'oferta-detallada/:id', component: OfertaDetalladaComponent },
+    { path: 'formulario', component: FormularioComponent},
+    { path: 'formacion', component: FormacionComponent },
+    { path: 'lista-ofertas', component: ListaOfertasComponent },
+    { path: 'home', component: HomeComponent },
     { path: 'quienes-somos', component: QuienesSomosComponent },
     { path: 'lista-ofertas/:id', component: ListaOfertasComponent, children: LISTAOFERTAS_ROUTES }
+ 
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES)

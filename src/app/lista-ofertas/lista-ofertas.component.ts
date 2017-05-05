@@ -18,6 +18,6 @@ export class ListaOfertasComponent implements OnInit {
   ngOnInit() {}
 
   navegarAOferta(indice:any) {
-    this.router.navigate(['lista-ofertas', indice, 'ver-detalle']);
+    this.router.navigate(['oferta-detallada', indice]);
   }
 }
