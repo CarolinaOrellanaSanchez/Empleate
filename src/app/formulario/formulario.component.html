@@ -1,5 +1,6 @@
-<button type="button" class="btn btn-info" >Usuario</button>
-<button type="button" class="btn btn-info" >Empresa</button>
+
+<button name="usuario" type="button" class="btn btn-info" (click)="cambiarUsuario(true)" >Usuario</button>
+<button name="empresa" type="button" class="btn btn-info" (click)="cambiarUsuario(false)" >Empresa</button>
 <hr>
 <form (ngSubmit)="onSubmit(f)" #f="ngForm" id="formulario1" *ngIf="usuario==true">
 <div>
@@ -29,7 +30,7 @@
 </form>
 <form (ngSubmit)="onSubmit(f)" #f="ngForm" id="formulario2" *ngIf="usuario==false">
 <div>
-  <h3>Datos personales</h3>
+  <h3>Datos empresa</h3>
 <div class="form-group">
 <label for="nombre">Nombre</label>
 <input type="text" class="form-control" id="nombre" name="nombre">

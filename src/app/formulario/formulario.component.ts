@@ -8,6 +8,11 @@ import { NgForm } from '@angular/forms';
 })
 export class FormularioComponent implements OnInit {
   usuario = true;
+
+  cambiarUsuario(activoUsuario){
+    this.usuario=activoUsuario;
+}
+
   onSubmit(form: NgForm) {
     
   }
