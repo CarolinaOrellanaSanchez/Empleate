@@ -14,7 +14,7 @@ export class ListaOfertasComponent implements OnInit {
   constructor(private router: Router, private ofertaService: OfertaService) {}
 
   ngOnInit() {
-    this.listaOfertas = this.ofertaService.devolverOferta();
+    this.listaOfertas = this.ofertaService.devolverOfertas();
   }
 
   navegarAOferta(indice:any) {

@@ -1,0 +1,26 @@
+<h1>Crea tu oferta</h1>
+<form [formGroup]="adminForm" (ngSubmit)="enviarFormulario()">
+  <div formGroupName="datosEmpresa">
+    <div class="form-group">
+      <label for="nombreEmpresa">Empresa</label>
+      <input type="text" class="form-control" id="nombre" formControlName="nombre">
+    </div>
+    <div class="form-group">
+      <label for="email">E-Mail</label>
+      <input type="text" class="form-control" id="email" formControlName="email">
+      <div *ngIf="adminForm.controls['datosUsuario'].controls['email'].invalid && adminForm.controls['datosUsuario'].controls['email'].touched">Este email no es válido</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" formControlName="password">
+  </div>
+  <div formArrayName="hobbies">
+    <h3>Hobbies</h3>
+    <div class="form-group" *ngFor="let item of adminForm.controls['hobbies'].controls; let indice = index">
+      <input type="text" class="form-control" formControlName="{{indice}}">
+    </div>
+  </div>
+  <button type="button" class="btn btn-default" (click)="anadirHobby()">Añadir Hobby</button>
+  <button type="submit" class="btn btn-primary" [disabled]="adminForm.invalid">Enviar</button>
+</form>

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from  './app.routing';
 import { AppComponent } from './app.component';
@@ -15,7 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { FooterComponent } from './footer.component';
 import { OfertaService } from './oferta.service';
-
+import { AdminFormComponent } from './admin-form/admin-form.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +29,16 @@ import { OfertaService } from './oferta.service';
     FormacionComponent,
     HomeComponent,
     FormularioComponent,
-    FooterComponent
+    FooterComponent,
+    AdminFormComponent
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    ReactiveFormsModule
   ],
   providers: [OfertaService],
   bootstrap: [AppComponent]
