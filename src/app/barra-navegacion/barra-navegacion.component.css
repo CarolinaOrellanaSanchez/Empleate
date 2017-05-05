@@ -40,8 +40,6 @@
 }
 .navbar-default .navbar-brand:hover {
     color: #3296b7;
-    width: 113%;
-    font-size: 22px;
 }
 /*Estilos botones navegacion*/   
 #bs-example-navbar-collapse-1{
@@ -70,9 +68,7 @@
 }
 .navbar-default .navbar-nav>li>a {
     color: #fff;
-    font-size: 17px;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #3296b7;
-    font-size: 19px;
 }
