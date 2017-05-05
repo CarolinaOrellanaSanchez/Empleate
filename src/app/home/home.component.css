@@ -1,7 +1,8 @@
 .jumbotron{
     background-image: url(../../assets/imagen_home.png);
     background-repeat: no-repeat;
-    height: 685px;
+    height: 693px;
+    margin-bottom: 0px;
 }
 .titulo{
     text-align: center;
