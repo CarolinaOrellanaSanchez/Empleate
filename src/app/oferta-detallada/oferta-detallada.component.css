@@ -1,0 +1,51 @@
+.general {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.first_box {
+  background-color: #b6c9d2;
+  padding: 20px;
+  width: 68%;
+}
+
+.second_box {
+  background-color: #fff;
+  width: 68%;
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+h2 {
+  margin-top: 3px;
+}
+h4{
+margin-top: 20px;
+
+}
+
+.logo_empresa {
+  float: right;
+}
+
+.detalle {
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+.Subtitulos {
+  font-size: 14px;
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+.button{
+        border-radius: 0px;
+    width: 10%;
+    border: 1px solid #eee;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
