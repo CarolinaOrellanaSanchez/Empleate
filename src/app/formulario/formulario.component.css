@@ -1,5 +1,8 @@
 .general_cont{
     background-image: url(../../assets/imagen_home.png);
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
 }
 .contenedor {
     width: 40%;
@@ -54,3 +57,41 @@
     width: 20%;
     border-radius: 0px;
 } 
+/*Estilos pop_up*/
+.pop_up{
+    background-color: rgba(7, 18, 25, 0.76);
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+    min-height: 100%;
+    display: none;
+}
+.fondo_popup{
+    position: absolute;
+    width: 50%;
+    left: 23%;
+    top: 31%;
+    background-color: #fff;
+    height: 20%;
+}
+.img_popup{
+    background-image: url(../../assets/flecha.png);
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}   
+.text_popup{
+        margin: 61px;
+}
+ #ok {
+     font-size: 30px;
+     color: #3296b7;
+}
+#ok2{
+    font-size: 18px;
+}
+

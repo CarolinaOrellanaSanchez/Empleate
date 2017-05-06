@@ -19,7 +19,7 @@
 9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Entra ya</button>
+      <button id="btn_acceso" type="submit" class="btn btn-primary">Entra ya</button>
     </div>
   </form>
   <form (ngSubmit)="onSubmit(f)" #f="ngForm" id="formulario2" *ngIf="usuario==false">
@@ -56,3 +56,13 @@
   </form>
 </div>
 </div>
+<a href="lista-ofertas" class="pop_up">
+  <div class="fondo_popup">
+    <div class="img_popup"></div>
+    <div class="text_popup">
+      <h2 id="ok">Registro Completado</h2>
+      <p id="ok2">Pulsa en cualquier zona para continuar</p>
+    </div>
+  </div>
+</a>
+

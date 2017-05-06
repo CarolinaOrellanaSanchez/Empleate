@@ -8,10 +8,11 @@ import { NgForm } from '@angular/forms';
 })
 export class FormularioComponent implements OnInit {
   usuario = true;
+  popup = false;
 
   cambiarUsuario(activoUsuario){
     this.usuario=activoUsuario;
-}
+  }
 
   onSubmit(form: NgForm) {
     
@@ -19,6 +20,9 @@ export class FormularioComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+  mostrarpopup(activoPopup){
+    this.popup=activoPopup;
   }
 
 }
