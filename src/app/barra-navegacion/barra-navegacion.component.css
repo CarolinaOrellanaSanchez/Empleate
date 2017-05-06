@@ -53,6 +53,7 @@
     width: 20%;
     border: 1px solid #3296b7;
     background-color: #a3ccda;
+    font-size: 19px;
 }
 .nav > li:hover{
     width: 20%;
