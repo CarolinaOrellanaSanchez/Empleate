@@ -1,14 +1,15 @@
 .jumbotron{
     background-image: url(../../assets/imagen_home.png);
     background-repeat: no-repeat;
-    height: 693px;
     margin-bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
 }
 .titulo{
     text-align: center;
-    top: 30%;
-    position: relative;
     color: #053e50;
+    margin-top: 11%;
 }
 .parrafo{
     text-align: center;
