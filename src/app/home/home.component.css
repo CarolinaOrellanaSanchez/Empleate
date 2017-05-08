@@ -4,7 +4,8 @@
     margin-bottom: 0px;
     min-width: 100%;
     min-height: 100%;
-    position: absolute;
+    position: relative;
+    height: 700px
 }
 .titulo{
     text-align: center;
@@ -20,7 +21,6 @@
 }
 .btn-lg{
     margin-left: 46%;
-    top: 190px;
     position: relative;
 }
 .btn-primary {
