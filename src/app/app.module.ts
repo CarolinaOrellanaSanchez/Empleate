@@ -16,6 +16,8 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { FooterComponent } from './footer.component';
 import { OfertaService } from './oferta.service';
 import { AdminFormComponent } from './admin-form/admin-form.component';
+import { BuscadorPipe } from './barra-navegacion/buscador.pipe';
+import { FormularioAdmComponent } from './formulario-adm/formulario-adm.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { AdminFormComponent } from './admin-form/admin-form.component';
     HomeComponent,
     FormularioComponent,
     FooterComponent,
-    AdminFormComponent
+    AdminFormComponent,
+    BuscadorPipe,
+    FormularioAdmComponent
     
   ],
   imports: [
