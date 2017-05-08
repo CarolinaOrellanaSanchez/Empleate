@@ -10,7 +10,8 @@
 .desc_corta_empresa{
     float: right;
     position: relative;
-    right: 45%;
+    left: 1%;
+    width: 74%;
     margin-top: 1%;
 }
 .list-group-item.active{
