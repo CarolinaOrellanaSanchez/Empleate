@@ -23,5 +23,7 @@ export class OfertaService {
   devolverOferta(id: any) {
     return this.listaOfertas[id];
   }
-
+  anadirOferta(newOferta){
+    this.listaOfertas.push(newOferta)
+  }
 }

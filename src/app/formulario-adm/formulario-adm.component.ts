@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
+import { OfertaService } from '../oferta.service'
 
 @Component({
   selector: 'app-formulario-adm',
@@ -9,7 +10,7 @@ import { FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
 export class FormularioAdmComponent implements OnInit {
   miFormulario: FormGroup;
 
-  constructor() {this.miFormulario = new FormGroup({
+  constructor(private ofertaService: OfertaService) {this.miFormulario = new FormGroup({
 
 'puesto': new FormControl('', Validators.required),
 'empresa': new FormControl('', Validators.required),
@@ -27,7 +28,10 @@ export class FormularioAdmComponent implements OnInit {
 } 
 
   ngOnInit() {
+
   }
- 
-  
+  onSubmit(){
+     this.ofertaService.anadirOferta(this.miFormulario.value)
+
+  }
 }
