@@ -45,3 +45,30 @@
     position: relative;
     margin-bottom: 4%;
 }
+#boton_eliminar{
+    left: 70%;
+    position: absolute;
+    top: 65%;
+    color: #0097ba;
+}
+#boton_eliminar:hover{
+    color: #0097ba;
+}
+#bloqueo{
+    left: 77%;
+    position: absolute;
+    top: 65%;
+    color: #0097ba;
+}
+#bloqueo:hover{
+    color: #0097ba;
+}
+#boton_editar{
+    left: 85%;
+    position: absolute;
+    top: 65%;
+    color: #0097ba;
+}
+#boton_editar:hover{
+    color: #0097ba;
+}
