@@ -14,6 +14,8 @@ export class OfertaService {
     new Oferta('../../../assets/garu.png', 'Garu', 'Se busca Arquitecto, Ingeniero o Economista', '5 días', 'Luxemburgo, Luxemburgo (Luxemburgo)', 'Graduado y Máster', 'Al menos 3 años', ['Ingles', ' Español', ' Microsoft Excel.'], 'Se busca un arquitecto, ingeniero o economista para e puesto de Asset Manager en una empresa ubicada en Luxemburgo, para implementar Bussiness plan, coordinar asesores legales, técnicos a lo largo de la vida de los activos, elaborar modelos financieros para adquisiciones, redactar presentaciones y notas de inversiones para los inversores. Se precisa fuerte conocimiento en Microsoft Excel, capacidad de realizar el trabajo en un tiempo reducido, capacidad de saber fomentar buenas relaciones con todo el equipo (Luxemburgo España y Francia), fuertes habilidades de comunicaciones y saber gestionar las relaciones internas y externas.', 1, 'Larga duración', '20.000€', 'Jornada completa', 'Agencia inmobiliaria ubicada en Marbella centro. Nuestro mercado es el español vacacional e igualmente el extranjero de segunda vivienda.'),
     new Oferta('../../../assets/acreditate.jpg', 'ACREDITATE: Instituto de Innovación Educativa Acreditate', 'Desarrollo de aplicaciones online PHP, Mysql, Html', '7 días', 'Málaga, Málaga (España)', 'Ingeniero Superior - Ingeniero en Informática', 'Al menos 1 año', ['PHP', ' MySQL', ' HTML5.'], 'Docencia de un curso en modalidad presencial consistente en "Desarrollo de aplicaciones online basado en PHP, Mysqul, HTML5" en Málaga.  Es necesario elaborar los contenidos formativos ajustados al modelo de ejecución de las sesiones formativas. Tendrá preferencia manifiesta aquellos profesionales con conocimientos y experiencia en formación presencial y online.', 1, '1 mes', '1000€ Brutos/mes', 'Parcial: de mañana', 'Institución de innovación educativa (ONG) que tiene el próposito de facilitar y participar en el desarrollo de proyectos educativos y sociales de calidad, bajo el prisma de la innovación.'),
   ];
+
+  puestoFiltrado: string = '';
   constructor() { }
 
   devolverOfertas(): Array<Oferta> {
@@ -23,7 +25,17 @@ export class OfertaService {
   devolverOferta(id: any) {
     return this.listaOfertas[id];
   }
+
   anadirOferta(newOferta){
     this.listaOfertas.push(newOferta)
   }
+
+  guardarPuesto(puesto) {
+    this.puestoFiltrado = puesto;
+  }
+  mostrarPuesto() {
+    return this.puestoFiltrado;
+  }
+
+
 }
