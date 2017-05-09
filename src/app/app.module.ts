@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { routing } from  './app.routing';
+import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.component';
 import { ListaOfertasComponent } from './lista-ofertas/lista-ofertas.component';
@@ -16,7 +16,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { FooterComponent } from './footer.component';
 import { OfertaService } from './oferta.service';
 import { AdminFormComponent } from './admin-form/admin-form.component';
-import { BuscadorPipe } from './barra-navegacion/buscador.pipe';
+import { BuscadorPipe } from './buscador.pipe';
 import { FormularioAdmComponent } from './formulario-adm/formulario-adm.component';
 
 @NgModule({
@@ -35,7 +35,7 @@ import { FormularioAdmComponent } from './formulario-adm/formulario-adm.componen
     AdminFormComponent,
     BuscadorPipe,
     FormularioAdmComponent
-    
+
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Oferta } from "../oferta";
+import { Oferta } from '../oferta';
 import { Router } from '@angular/router';
 import { OfertaService } from '../oferta.service';
 
@@ -10,11 +10,13 @@ import { OfertaService } from '../oferta.service';
 })
 export class ListaOfertasComponent implements OnInit {
   listaOfertas: Array < Oferta > = [];
+  puesto: string;
 
   constructor(private router: Router, private ofertaService: OfertaService) {}
 
   ngOnInit() {
     this.listaOfertas = this.ofertaService.devolverOfertas();
+    this.puesto = this.ofertaService.mostrarPuesto();
   }
 
   navegarAOferta(indice:any) {

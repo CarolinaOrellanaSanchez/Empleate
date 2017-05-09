@@ -1,0 +1,42 @@
+.general{
+    min-height: 100%;
+    min-width: 100%;
+    background-color: #eee;
+    padding-left: 16%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    position: absolute;
+}
+ .contenedor{
+    background-color: #fff;
+    width: 75%;
+    padding: 2%;
+ } 
+ .banner{
+    width: 100%;
+    border: 1px solid black;
+    height: 85px;
+    position: relative;
+    margin-bottom: 1%;
+ }
+ .curso{
+    border: 1px solid black;
+    width: 50%;
+    padding: 1%;
+ } 
+ #curso1{
+     float:left;
+ } 
+ #curso2{
+     float:right;
+ } 
+ #curso3{
+     float:left;
+ } 
+ #curso4{
+     float:right;
+ } 
+ h2{
+     font-size: 20px;
+     margin-top: 0px;
+ }

@@ -1,2 +1,2 @@
-<app-oferta (click)="navegarAOferta(indice)" *ngFor="let oferta of listaOfertas; let indice = index" [oferta]="oferta"></app-oferta>
-<router-outlet></router-outlet>
+<div class="fondo"><app-oferta (click)="navegarAOferta(indice)" *ngFor="let oferta of listaOfertas | buscador:puesto; let indice = index" [oferta]="oferta"></app-oferta>
+<router-outlet></router-outlet></div>
