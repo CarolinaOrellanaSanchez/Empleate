@@ -1,78 +1,78 @@
-<form class="perro">
+<form [formGroup]="miFormulario" (ngSubmit)="onSubmit()">
 <div class="form-group">
-  <label for="example-text-input" class="col-2 col-form-label"> Puesto</label>
+  <label for="example-text-input" class="col-2 col-form-label" formControlName="puesto"> Puesto</label>
   <div class="col-10">
     <input class="form-control" type="text" value="Puesto" id="nombrePuesto">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-search-input" class="col-2 col-form-label">Empresa</label>
+  <label for="example-search-input" class="col-2 col-form-label" formControlName="empresa">Empresa</label>
   <div class="col-10">
     <input class="form-control" type="text" value="Empresa" id="nombreEmpresa">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-email-input" class="col-2 col-form-label">Lugar</label>
+  <label for="example-email-input" class="col-2 col-form-label" formControlName="lugar">Lugar</label>
   <div class="col-10">
     <input class="form-control" type="text" value="Domicilio empresa" id="direccion">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-url-input" class="col-2 col-form-label">Estudios mínimos</label>
+  <label for="example-url-input" class="col-2 col-form-label" formControlName="estudios_minimos">Estudios mínimos</label>
   <div class="col-10">
     <input class="form-control" type="text" value="Requisitos" id="estudios">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-tel-input" class="col-2 col-form-label">Experiencia</label>
+  <label for="example-tel-input" class="col-2 col-form-label" formControlName="experiencia">Experiencia</label>
   <div class="col-10">
     <input class="form-control" type="text" value="Requisitos" id="experiencia">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-password-input" class="col-2 col-form-label">Conocimientos necesarios</label>
+  <label for="example-password-input" class="col-2 col-form-label" formControlName="conocimientos_necesarios">Conocimientos necesarios</label>
   <div class="col-10">
     <input class="form-control" type="text" value="Requisitos" id="conocimientos">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-number-input" class="col-2 col-form-label">Descripción Empresa</label>
+  <label for="example-number-input" class="col-2 col-form-label" formControlName="descripcion_empresa">Descripción Empresa</label>
   <div class="col-10">
     <input class="form-control" type="text" value="Descripción" id="descripcionEmpresa">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-datetime-local-input" class="col-2 col-form-label">Descripción Puesto</label>
+  <label for="example-datetime-local-input" class="col-2 col-form-label" formControlName="descripcion_puesto">Descripción Puesto</label>
   <div class="col-10">
     <input class="form-control" type="text" value="Descripción" id="descripcionPuesto">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-date-input" class="col-2 col-form-label">Número de vacantes</label>
+  <label for="example-date-input" class="col-2 col-form-label" formControlName="numero_vacantes">Número de vacantes</label>
   <div class="col-10">
     <input class="form-control" type="number" value="1-10" id="vacantes">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-month-input" class="col-2 col-form-label">Duración</label>
+  <label for="example-month-input" class="col-2 col-form-label"formControlName="duracion">Duración</label>
   <div class="col-10">
     <input class="form-control" type="text" value="Duración" id="duracion">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-week-input" class="col-2 col-form-label">Salario</label>
+  <label for="example-week-input" class="col-2 col-form-label"formControlName="salario">Salario</label>
   <div class="col-10">
     <input class="form-control" type="number" value="18.000€" id="salario">
   </div>
 </div>
 <div class="form-group">
-  <label for="example-time-input" class="col-2 col-form-label">Horario</label>
+  <label for="example-time-input" class="col-2 col-form-label" formControlName="horario">Horario</label>
   <div class="col-10">
     <input class="form-control" type="text" value="Jornada completa" id="horario">
   </div>
   <br>
   <button type="submit" class="btn btn-primary">Enviar</button>
-  <button type="submit" class="btn btn-danger">Limpiar</button>
+  <button type="reset" class="btn btn-danger">Limpiar</button>
 </div>
 <hr>
 <hr>
