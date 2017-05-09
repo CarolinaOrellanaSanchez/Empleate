@@ -11,18 +11,23 @@
     background-color: #fff;
     width: 75%;
     padding: 2%;
+    min-height: 75%;
+    position: absolute;
  } 
  .banner{
     width: 100%;
-    border: 1px solid black;
     height: 85px;
-    position: relative;
     margin-bottom: 1%;
+    background-image: url(../../assets/banner.png);
+    background-repeat: no-repeat;
+    margin-left: 11%;
+    margin-top: 10px;
  }
  .curso{
-    border: 1px solid black;
-    width: 50%;
-    padding: 1%;
+    width: 48%;
+    padding: 2%;
+    margin: 1%;
+    
  } 
  #curso1{
      float:left;
@@ -37,6 +42,27 @@
      float:right;
  } 
  h2{
-     font-size: 20px;
-     margin-top: 0px;
+    font-size: 28px;
+    margin-top: 0px;
+    color: #099bbc;
+ }
+ h3 {
+     font-size: 24px;
+ }
+ p{
+     margin: 0px;
+ }
+ .textos{
+    float: right;
+    width: 65%;
+ }
+ .img_curso{
+    width: 150px;
+    height: 150px;
+    float: left;
+ }
+ .video{
+    margin-left: 20%;
+    margin-bottom: 2%;
+    margin-top: 2%;
  }
