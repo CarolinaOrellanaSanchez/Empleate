@@ -5,6 +5,8 @@
         <button class="btn btn-default" type="button" (click)='enviarBusqueda(input.value)'>Buscar</button>
     </span>
   </div>
+  <button class="boton_crear" type="button" *ngIf="administrador">Crear nueva oferta</button>
+  
   <app-oferta (click)="navegarAOferta(indice)" *ngFor="let oferta of listaOfertas | buscador:puesto; let indice = index" [oferta]="oferta"></app-oferta>
   <router-outlet></router-outlet>
 </div>

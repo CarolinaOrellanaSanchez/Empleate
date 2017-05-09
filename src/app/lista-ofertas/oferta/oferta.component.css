@@ -19,16 +19,16 @@
     color: #3296b7;
     background-color: #ffffff;
     border: 1px solid #3296b7;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10%;
+    width: 80%;
 }
 .list-group-item.active:hover{
     z-index: 2;
     color: #ffffff;
     background-color: #97c3d2;
     border: 1px solid #ffffff;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10%;
+    width: 80%;
 }
 .list-group-item.active .list-group-item-text{
     color: #333;

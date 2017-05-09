@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Oferta } from '../oferta';
 import { Router } from '@angular/router';
 import { OfertaService } from '../oferta.service';
@@ -11,6 +11,7 @@ import { OfertaService } from '../oferta.service';
 export class ListaOfertasComponent implements OnInit {
   listaOfertas: Array < Oferta > = [];
   puesto: string;
+  @Input() adminstrador = false;
 
   constructor(private router: Router, private ofertaService: OfertaService) {}
 
