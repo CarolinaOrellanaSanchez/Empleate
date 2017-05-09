@@ -1,2 +1,10 @@
-<div class="fondo"><app-oferta (click)="navegarAOferta(indice)" *ngFor="let oferta of listaOfertas | buscador:puesto; let indice = index" [oferta]="oferta"></app-oferta>
-<router-outlet></router-outlet></div>
+<div class="contenedor">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search for..." #input>
+    <span class="input-group-btn">
+        <button class="btn btn-default" type="button" (click)='enviarBusqueda(input.value)'>Buscar</button>
+    </span>
+  </div>
+  <app-oferta (click)="navegarAOferta(indice)" *ngFor="let oferta of listaOfertas | buscador:puesto; let indice = index" [oferta]="oferta"></app-oferta>
+  <router-outlet></router-outlet>
+</div>

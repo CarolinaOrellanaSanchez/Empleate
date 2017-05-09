@@ -4,19 +4,13 @@
       <img class="logo_empleate" src="../../assets/Logo_empleate.png">
     </a>
     <div class="navbar-header col-md-3">
-      <a class="navbar-brand" [routerLink] ="['lista-ofertas']">Ofertas de empleo</a>
+      <a class="navbar-brand" href ='lista-ofertas'>Ofertas de empleo</a>
     </div>
-    <div class="col-md-7" id="bs-example-navbar-collapse-1">
+    <div class="col-md-9" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a [routerLink]="['formulario']">Regístrate</a></li>
         <li><a [routerLink]="['formacion']">Cursos</a></li>
         <li><a [routerLink]= "['quienes-somos']">Quiénes somos</a></li>
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for..." #input>
-          <span class="input-group-btn">
-              <button class="btn btn-default" type="button" (click)="buscarpuesto(input.value)">Buscar</button>
-            </span>
-        </div>
+        <li id="registro"><a [routerLink]="['formulario']">Regístrate</a></li>
       </ul>
     </div>
   </div>

@@ -16,10 +16,13 @@ export class ListaOfertasComponent implements OnInit {
 
   ngOnInit() {
     this.listaOfertas = this.ofertaService.devolverOfertas();
-    this.puesto = this.ofertaService.mostrarPuesto();
+    this.puesto = '';
   }
 
   navegarAOferta(indice:any) {
     this.router.navigate(['oferta-detallada', indice]);
+  }
+  enviarBusqueda(puesto) {
+    this.puesto = puesto;
   }
 }

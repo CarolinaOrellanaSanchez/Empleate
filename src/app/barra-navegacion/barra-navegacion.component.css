@@ -43,33 +43,34 @@
 }
 /*Estilos botones navegacion*/   
 #bs-example-navbar-collapse-1{
-    float: right;
+    float: left;
     width: 79%;
     margin-top: 10px;
     padding-left: 0px;
     padding-right: 0px;
 }
+ul{
+    min-width: 100%;
+    background: #3296b7;
+}
 .nav > li{
-    width: 20%;
     border: 1px solid #3296b7;
     background-color: #a3ccda;
     font-size: 19px;
+    width: 18%;
+    text-align: center;
 }
 .nav > li:hover{
-    width: 20%;
     border: 1px solid #3296b7;
     background-color: #fff;
 }
-.input-group {
-    padding-left: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 10px;
-    border: 1px solid #3296b7;
-}
+
 .navbar-default .navbar-nav>li>a {
     color: #fff;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #3296b7;
+}
+#registro{
+    float: right;
 }
