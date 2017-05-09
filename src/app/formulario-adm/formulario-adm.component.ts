@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
-import { OfertaService } from '../oferta.service'
+import { OfertaService } from '../oferta.service';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-formulario-adm',
@@ -10,17 +11,17 @@ import { OfertaService } from '../oferta.service'
 export class FormularioAdmComponent implements OnInit {
   miFormulario: FormGroup;
 
-  constructor(private ofertaService: OfertaService) {this.miFormulario = new FormGroup({
+  constructor(private ofertaService: OfertaService, private router: Router) {this.miFormulario = new FormGroup({
 
 'puesto': new FormControl('', Validators.required),
-'empresa': new FormControl('', Validators.required),
+'nombreEmpresa': new FormControl('', Validators.required),
 'lugar': new FormControl('', Validators.required),
-'estudios_minimos': new FormControl('', Validators.required),
+'estudios': new FormControl('', Validators.required),
 'experiencia': new FormControl('', Validators.required),
-'conocimientos_necesarios': new FormControl('', Validators.required),
-'descripcion_empresa': new FormControl('', Validators.required),
-'descripcion_puesto': new FormControl('', Validators.required),
-'numero_vacantes': new FormControl('', Validators.required),
+'skills': new FormControl('', Validators.required),
+'descEmpresa': new FormControl('', Validators.required),
+'descripcion': new FormControl('', Validators.required),
+'vacantes': new FormControl('', Validators.required),
 'duracion': new FormControl('', Validators.required),
 'salario': new FormControl('', Validators.required),
 'horario': new FormControl('', Validators.required)
@@ -31,7 +32,8 @@ export class FormularioAdmComponent implements OnInit {
 
   }
   onSubmit(){
-     this.ofertaService.anadirOferta(this.miFormulario.value)
+     this.ofertaService.anadirOferta(this.miFormulario.value);
+     this.router.navigate(['lista-ofertas'])
 
   }
 }
