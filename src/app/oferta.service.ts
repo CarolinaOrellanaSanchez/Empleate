@@ -37,7 +37,11 @@ export class OfertaService {
     return this.puestoFiltrado;
   }
   eliminarOferta(oferta) {
-    this.listaOfertas.splice(this.listaOfertas.indexOf(oferta),1);
+    this.listaOfertas.splice(this.listaOfertas.indexOf(oferta), 1);
+  }
+
+  editarOferta(ofertaVieja: Oferta, ofertaNueva: Oferta) {
+    this.listaOfertas[this.listaOfertas.indexOf(ofertaVieja)] = ofertaNueva;
   }
 
 }
