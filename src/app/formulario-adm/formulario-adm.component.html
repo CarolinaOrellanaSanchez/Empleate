@@ -1,90 +1,90 @@
 <form [formGroup]="miFormulario" (ngSubmit)="onSubmit()">
-<div class="form-group">
-  <label for="imagen-url" class="col-2 col-form-label" >Logo de la empresa</label>
-  <div class="col-10">
-    <input class="form-control" placeholder="Url imagen" type="text" id="imagenUrl" formControlName="imagenUrl #imagen">
+  <div class="form-group">
+    <label for="imagen-url" class="col-2 col-form-label">Logo de la empresa</label>
+    <div class="col-10">
+      <input class="form-control" placeholder="Url imagen" type="text" id="imagenUrl" formControlName="imagenUrl" #imagen>
+    </div>
+    <div class="col-md-12">
+      <div class="img">
+        <img [src]="imagen.value" class="img-responsive">
+      </div>
+    </div>
   </div>
-   <div class="col-md-12">
-     <div class="img">
-    <img [src]="imagen.value" class="img-responsive">
+  <div class="form-group">
+    <label for="example-text-input" class="col-2 col-form-label">Puesto</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Puesto" id="nombrePuesto" formControlName="puesto">
+    </div>
   </div>
-   </div>
-</div>
-<div class="form-group">
-  <label for="example-text-input" class="col-2 col-form-label" >Puesto</label>
-  <div class="col-10">
-    <input class="form-control" type="text" placeholder="Puesto" id="nombrePuesto" formControlName="puesto">
+  <div class="form-group">
+    <label for="example-search-input" class="col-2 col-form-label">Empresa</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Empresa" id="nombreEmpresa" formControlName="nombreEmpresa">
+    </div>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-search-input" class="col-2 col-form-label" >Empresa</label>
-  <div class="col-10">
-    <input class="form-control" type="text" placeholder="Empresa" id="nombreEmpresa" formControlName="nombreEmpresa">
+  <div class="form-group">
+    <label for="example-email-input" class="col-2 col-form-label">Lugar</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Domicilio empresa" id="direccion" formControlName="lugar">
+    </div>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-email-input" class="col-2 col-form-label" >Lugar</label>
-  <div class="col-10">
-    <input class="form-control" type="text" placeholder="Domicilio empresa" id="direccion" formControlName="lugar">
+  <div class="form-group">
+    <label for="example-url-input" class="col-2 col-form-label">Estudios mínimos</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Requisitos" id="estudios" formControlName="estudios">
+    </div>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-url-input" class="col-2 col-form-label" >Estudios mínimos</label>
-  <div class="col-10">
-    <input class="form-control" type="text" placeholder="Requisitos" id="estudios" formControlName="estudios">
+  <div class="form-group">
+    <label for="example-tel-input" class="col-2 col-form-label">Experiencia</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Requisitos" id="experiencia" formControlName="experiencia">
+    </div>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-tel-input" class="col-2 col-form-label">Experiencia</label>
-  <div class="col-10">
-    <input class="form-control" type="text" placeholder="Requisitos" id="experiencia" formControlName="experiencia">
+  <div class="form-group">
+    <label for="example-password-input" class="col-2 col-form-label">Conocimientos necesarios</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Requisitos" id="conocimientos" formControlName="skills">
+    </div>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-password-input" class="col-2 col-form-label" >Conocimientos necesarios</label>
-  <div class="col-10">
-    <input class="form-control" type="text" placeholder="Requisitos" id="conocimientos" formControlName="skills">
+  <div class="form-group">
+    <label for="example-number-input" class="col-2 col-form-label">Descripción Empresa</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Descripción" id="descripcionEmpresa" formControlName="descEmpresa">
+    </div>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-number-input" class="col-2 col-form-label" >Descripción Empresa</label>
-  <div class="col-10">
-    <input class="form-control" type="text" placeholder="Descripción" id="descripcionEmpresa" formControlName="descEmpresa">
+  <div class="form-group">
+    <label for="example-datetime-local-input" class="col-2 col-form-label">Descripción Puesto</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Descripción" id="descripcionPuesto" formControlName="descripcion">
+    </div>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-datetime-local-input" class="col-2 col-form-label" >Descripción Puesto</label>
-  <div class="col-10">
-    <input class="form-control" type="text" placeholder="Descripción" id="descripcionPuesto"formControlName="descripcion">
+  <div class="form-group">
+    <label for="example-date-input" class="col-2 col-form-label">Número de vacantes</label>
+    <div class="col-10">
+      <input class="form-control" type="number" placeholder="1-10" id="vacantes" formControlName="vacantes">
+    </div>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-date-input" class="col-2 col-form-label" >Número de vacantes</label>
-  <div class="col-10">
-    <input class="form-control" type="number" placeholder="1-10" id="vacantes" formControlName="vacantes">
+  <div class="form-group">
+    <label for="example-month-input" class="col-2 col-form-label">Duración</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Duración" id="duracion" formControlName="duracion">
+    </div>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-month-input" class="col-2 col-form-label">Duración</label>
-  <div class="col-10">
-    <input class="form-control" type="text" placeholder="Duración" id="duracion" formControlName="duracion">
+  <div class="form-group">
+    <label for="example-week-input" class="col-2 col-form-label">Salario</label>
+    <div class="col-10">
+      <input class="form-control" type="number" placeholder="18.000€" id="salario" formControlName="salario">
+    </div>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-week-input" class="col-2 col-form-label">Salario</label>
-  <div class="col-10">
-    <input class="form-control" type="number" placeholder="18.000€" id="salario" formControlName="salario">
+  <div class="form-group">
+    <label for="example-time-input" class="col-2 col-form-label">Horario</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Jornada completa" id="horario" formControlName="horario">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="reset" class="btn btn-danger">Limpiar</button>
   </div>
-</div>
-<div class="form-group">
-  <label for="example-time-input" class="col-2 col-form-label" >Horario</label>
-  <div class="col-10">
-    <input class="form-control" type="text" placeholder="Jornada completa" id="horario" formControlName="horario">
-  </div>
-  <br>
-  <button type="submit" class="btn btn-primary">Enviar</button>
-  <button type="reset" class="btn btn-danger">Limpiar</button>
-</div>
-<hr>
-<hr>
+  <hr>
+  <hr>
 </form>
