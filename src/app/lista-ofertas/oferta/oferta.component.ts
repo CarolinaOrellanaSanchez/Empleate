@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Oferta } from '../../oferta';
-import { OfertaService } from '../../oferta.service'
+import { OfertaService } from '../../oferta.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-oferta',
@@ -8,21 +9,23 @@ import { OfertaService } from '../../oferta.service'
   styleUrls: ['./oferta.component.css']
 })
 export class OfertaComponent implements OnInit {
-  bloquear = true
-  @Input() index:number;
-  
-  bloquearOferta(){
-    this.bloquear=!this.bloquear;
+  bloquear = true;
+  @Input() index: number;
+  @Input() oferta: Oferta;
+
+  constructor(private ofertaService: OfertaService, private router: Router) { }
+
+  bloquearOferta() {
+    this.bloquear = !this.bloquear;
   }
 
-  eliminar(){
+  eliminar() {
     this.ofertaService.eliminarOferta(this.oferta);
   }
 
-  @Input() oferta: Oferta;
-  constructor(private ofertaService: OfertaService) { }
+  ngOnInit() { }
 
-  ngOnInit() {
+  irFormularioAdm() {
+    this.router.navigate(['formulario-adm', this.index]);
   }
-
 }

@@ -36,11 +36,17 @@ export class FormularioAdmComponent implements OnInit {
       }
     );
   }
-  onSubmit() {
-    this.ofertaService.anadirOferta(this.miFormulario.value);
-    this.router.navigate(['lista-ofertas']);
 
-  }
+  onSubmit() {
+      const ofertaNueva = this.miFormulario.value;
+      if (this.esNueva) {
+        this.ofertaService.anadirOferta(ofertaNueva);
+      } else {
+        this.ofertaService.editarOferta(this.oferta, ofertaNueva);
+      } 
+      this.router.navigate(['lista-ofertas']);
+    }
+
   private inicializarFormulario() {
     let imagenOferta = '';
     let puestoOferta = '';

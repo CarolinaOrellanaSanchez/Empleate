@@ -9,7 +9,6 @@ import { ListaOfertasComponent } from './lista-ofertas/lista-ofertas.component';
 import { OfertaComponent } from './lista-ofertas/oferta/oferta.component';
 import { OfertaDetalladaComponent } from './oferta-detallada/oferta-detallada.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
-import { OfertasComponent } from './ofertas/ofertas.component';
 import { FormacionComponent } from './formacion/formacion.component';
 import { HomeComponent } from './home/home.component';
 import { FormularioComponent } from './formulario/formulario.component';
@@ -27,7 +26,6 @@ import { FormularioAdmComponent } from './formulario-adm/formulario-adm.componen
     OfertaComponent,
     OfertaDetalladaComponent,
     QuienesSomosComponent,
-    OfertasComponent,
     FormacionComponent,
     HomeComponent,
     FormularioComponent,
