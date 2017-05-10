@@ -8,6 +8,6 @@
         <a href="formulario-adm" id="boton" class="btn btn-default" type="button">Crear nueva oferta</a>
     </span>
   </div>
-  <app-oferta (click)="navegarAOferta(indice)" *ngFor="let oferta of listaOfertas | buscador:puesto; let indice = index" [oferta]="oferta"></app-oferta>
-  <router-outlet></router-outlet>
+  <app-oferta *ngFor="let oferta of listaOfertas | buscador:puesto; let indice = index" [oferta]="oferta" [index]="indice"></app-oferta>
+  <!--<router-outlet></router-outlet>-->
 </div>

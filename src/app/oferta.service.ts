@@ -36,6 +36,8 @@ export class OfertaService {
   mostrarPuesto() {
     return this.puestoFiltrado;
   }
-
+  eliminarOferta(oferta) {
+    this.listaOfertas.splice(this.listaOfertas.indexOf(oferta),1);
+  }
 
 }

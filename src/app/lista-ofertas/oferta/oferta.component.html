@@ -1,6 +1,7 @@
 <div class="contenedor">
   <div class="list-group">
     <a class="list-group-item active">
+      <a [routerLink]="['/oferta-detallada', index]">
       <div class="logo_empresa">
         <img id="logo_empresa" src="{{oferta.imagenUrl}}" />
       </div>
@@ -12,9 +13,10 @@
           <li><b>Skills: {{oferta.skills}}</b></li>
         </ul>
       </div>
-      <button id="boton_eliminar" type="button">Eliminar</button>
-      <button id="bloqueo" type="button">Bloquear</button>
-      <button id="boton_editar" type="button">Editar</button>
+      </a>
+      <button id="boton_eliminar" type="button" (click)="eliminar()" [disabled]="!bloquear">Eliminar</button>
+      <button id="bloqueo" type="button" (click)="bloquearOferta()">Bloquear</button>
+      <button id="boton_editar" type="button" [disabled]="!bloquear">Editar</button>
     </a>
   </div>
 </div>
