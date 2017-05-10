@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs/Rx';
 import { Oferta } from '../oferta';
-import { OfertaService} from '../oferta.service'
+import { OfertaService } from '../oferta.service'
 
 @Component({
   selector: 'app-oferta-detallada',
@@ -13,14 +13,26 @@ export class OfertaDetalladaComponent implements OnInit {
   subscripcion: Subscription;
   id: string;
   oferta: Oferta;
-  constructor(private activatedRoute: ActivatedRoute, private ofertaService: OfertaService) { 
+  bloquear = true;
+  @Input() index:number;
+
+  constructor(private activatedRoute: ActivatedRoute, private ofertaService: OfertaService, private router: Router) { 
     this.subscripcion = this.activatedRoute.params.subscribe(
       params => this.id = params['id']
     );
   }
 
+   bloquearOferta(){
+    this.bloquear=!this.bloquear;
+  }
+    eliminar(){
+    this.ofertaService.eliminarOferta(this.oferta);
+    this.router.navigate(['/lista-ofertas'])
+  }
+
   ngOnInit() {
     this.oferta = this.ofertaService.devolverOferta(this.id);
+  
   }
 
 }

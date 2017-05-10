@@ -34,9 +34,9 @@
       <p class="Subtitulos"><b>Horario</b></p>
       <p class="detalle">{{oferta.horario}}</p>
     </div>
-    <button class="button">Inscríbete</button>
-    <button class="button">Editar</button>
-    <button class="button" type="button">Eliminar</button>
-    <button class="button" type="button">Bloquear</button>
+    <button class="button" [disabled]="!bloquear">Inscríbete</button>
+    <button class="button" [disabled]="!bloquear">Editar</button>
+    <button class="button" type="button" (click)="eliminar()" [disabled]="!bloquear">Eliminar</button>
+    <button class="button" type="button" (click)="bloquearOferta()">Bloquear</button>
   </div>
 </div>

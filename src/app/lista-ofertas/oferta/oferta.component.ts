@@ -20,6 +20,7 @@ export class OfertaComponent implements OnInit {
   }
 
   @Input() oferta: Oferta;
+  
   constructor(private ofertaService: OfertaService) { }
 
   ngOnInit() {
