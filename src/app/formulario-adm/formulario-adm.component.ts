@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
 import { OfertaService } from '../oferta.service';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-formulario-adm',
@@ -12,7 +12,7 @@ export class FormularioAdmComponent implements OnInit {
   miFormulario: FormGroup;
 
   constructor(private ofertaService: OfertaService, private router: Router) {this.miFormulario = new FormGroup({
-
+'imagenUrl': new FormControl('', Validators.required),
 'puesto': new FormControl('', Validators.required),
 'nombreEmpresa': new FormControl('', Validators.required),
 'lugar': new FormControl('', Validators.required),
@@ -26,14 +26,14 @@ export class FormularioAdmComponent implements OnInit {
 'salario': new FormControl('', Validators.required),
 'horario': new FormControl('', Validators.required)
 });
-} 
+}
 
   ngOnInit() {
 
   }
-  onSubmit(){
+  onSubmit() {
      this.ofertaService.anadirOferta(this.miFormulario.value);
-     this.router.navigate(['lista-ofertas'])
+     this.router.navigate(['lista-ofertas']);
 
   }
 }

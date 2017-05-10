@@ -26,8 +26,8 @@ export class OfertaService {
     return this.listaOfertas[id];
   }
 
-  anadirOferta(newOferta){
-    this.listaOfertas.push(newOferta)
+  anadirOferta(newOferta) {
+    this.listaOfertas.push(newOferta);
   }
 
   guardarPuesto(puesto) {
