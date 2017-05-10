@@ -56,8 +56,8 @@
   </form>
 </div>
 </div>
-<a href="lista-ofertas" class="pop_up">
-  <div class="fondo_popup">
+<a href="lista-ofertas" [ngClass]="{'no-mostrar': !mostrado, 'mostrar': mostrado}" class="pop_up">
+  <div class="fondo_popup" >
     <div class="img_popup"></div>
     <div class="text_popup">
       <h2 id="ok">Registro Completado</h2>

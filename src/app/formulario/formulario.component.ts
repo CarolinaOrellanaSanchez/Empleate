@@ -9,20 +9,20 @@ import { NgForm } from '@angular/forms';
 export class FormularioComponent implements OnInit {
   usuario = true;
   popup = false;
+  mostrado = false;
+
 
   cambiarUsuario(activoUsuario){
     this.usuario=activoUsuario;
   }
 
   onSubmit(form: NgForm) {
-    
+    this.mostrado = !this.mostrado;
   }
   constructor() { }
 
   ngOnInit() {
   }
-  mostrarpopup(activoPopup){
-    this.popup=activoPopup;
-  }
+  
 
 }

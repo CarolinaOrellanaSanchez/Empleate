@@ -34,9 +34,18 @@
       <p class="Subtitulos"><b>Horario</b></p>
       <p class="detalle">{{oferta.horario}}</p>
     </div>
-    <button class="button" [disabled]="!bloquear">Inscríbete</button>
-    <button class="button" [disabled]="!bloquear">Editar</button>
+    <button class="button" [disabled]="!bloquear" (click)="inscribirse()">Inscríbete</button>
+    <button class="button" (click)="irFormularioAdm()" [disabled]="!bloquear">Editar</button>
     <button class="button" type="button" (click)="eliminar()" [disabled]="!bloquear">Eliminar</button>
     <button class="button" type="button" (click)="bloquearOferta()">Bloquear</button>
   </div>
 </div>
+<a href="lista-ofertas" [ngClass]="{'no-mostrar': !mostrado, 'mostrar': mostrado}" class="pop_up">
+  <div class="fondo_popup" >
+    <div class="img_popup"></div>
+    <div class="text_popup">
+      <h2 id="ok">Registro Completado</h2>
+      <p id="ok2">Pulsa en cualquier zona para continuar</p>
+    </div>
+  </div>
+</a>

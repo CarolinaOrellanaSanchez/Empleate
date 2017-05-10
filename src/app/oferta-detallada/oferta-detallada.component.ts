@@ -11,9 +11,10 @@ import { OfertaService } from '../oferta.service'
 })
 export class OfertaDetalladaComponent implements OnInit {
   subscripcion: Subscription;
-  id: string;
+  id: number;
   oferta: Oferta;
   bloquear = true;
+  mostrado = false;
   @Input() index:number;
 
   constructor(private activatedRoute: ActivatedRoute, private ofertaService: OfertaService, private router: Router) { 
@@ -29,10 +30,16 @@ export class OfertaDetalladaComponent implements OnInit {
     this.ofertaService.eliminarOferta(this.oferta);
     this.router.navigate(['/lista-ofertas'])
   }
+ 
+     irFormularioAdm(){
+      this.router.navigate(['formulario-adm', this.id]);
+    }
 
   ngOnInit() {
     this.oferta = this.ofertaService.devolverOferta(this.id);
-  
+  }
+ inscribirse() {
+    this.mostrado = !this.mostrado;
   }
 
 }
