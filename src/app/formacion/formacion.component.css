@@ -41,8 +41,9 @@
      float:right;
  } 
  h2{
-     font-size: 25px;
-     margin-top: 0px;
+    font-size: 28px;
+    margin-top: 0px;
+    color: #3296b7;
  }
  .img_curso{
     width: 100%;

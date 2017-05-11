@@ -1,12 +1,62 @@
-.form-group{
-    margin-left: 400px;
-    margin-right: 400px;
 
+
+/*ya estaban*/
+.contenedor{
+    width: 100%;
+    padding-top: 20px;
+    background-color: #eee;
+}
+form{
+    width: 60%;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-left: 21%;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.form-group{
+    margin-left: 0px;
+    margin-right: 2%;
+}
+h3 {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: #3296b7;
+}
+label{
+    font-size: 17px;
 }
 .btn-primary{
-    width: 120px;
-    
+    color: #fff;
+    background-color: #3296b7;
+    border-color: #3296b7;
+    margin: 0px;
+    width: 20%;
+    border-radius: 0px;
 }
+.btn-primary:hover{
+    color: #3296b7;
+    background-color: #ffffff;
+    border-color: #3296b7;
+    margin: 0px;
+    width: 20%;
+    border-radius: 0px;
+}
+
 .btn-danger{
-    width: 120px;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d9534f;
+    margin: 0px;
+    width: 20%;
+    border-radius: 0px;
 }
+.btn-danger:hover{
+    color: #d9534f;
+    background-color: #fff;
+    border-color: #d9534f;
+    margin: 0px;
+    width: 20%;
+    border-radius: 0px;
+}
+
